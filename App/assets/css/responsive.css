@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+ * --------------------------------------------------
+ * Media Queries CSS3
+ * --------------------------------------------------
+**/
+/* ------    orientation    ------ */
+@media only screen and (orientation: portrait) {
+}
+@media only screen and (orientation: landscape) {
+}
+
+
+
+/* ------    largeur d'affichage    ------ */
+@media only screen and (min-width: 3000px) {
+	/* ------    featured    ------ */
+			/*
+			.cb-slideshow li span {
+				-khtml-background-size:auto;
+				-moz-background-size:auto;
+				-ms-background-size:auto;
+				-o-background-size:auto;
+				-webkit-background-size:auto;
+				background-size:auto;
+			}
+			*/
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+}
+
+
+
+/* --- Pour les écrans inférieurs à 1020px --- */
+@media only screen and (max-width: 1020px) {
+/* ------    générales    ------ */
+html { font-size:58%; }
+}
+
+
+
+/* --- Pour les écrans inférieurs à 1020px --- */
+@media only screen and (max-width: 1018px) {
+}
+
+
+
+/* --- Pour les écrans inférieurs à 800px --- */
+@media only screen and (max-width: 798px) {
+}
+
+
+
+/* --- Pour les écrans inférieurs à 768px --- */
+@media only screen and (max-width: 766px) {
+}
+
+
+
+/* --- Pour les écrans inférieurs à 600px --- */
+@media only screen and (max-width: 598px) {
+}
+
+
+
+/* --- Pour les écrans inférieurs à 480px --- */
+@media only screen and (max-width: 478px) {
+}
+
+
+
+/* ------    écran retina    ------ */
+@media only screen and (min-device-pixel-ratio: 1.5),
+			 only screen and (-moz-min-device-pixel-ratio: 1.5),
+			 only screen and (-o-min-device-pixel-ratio: 3/2),
+			 only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+}
+
+
+
+/* ------    impression    ------ */
+@media print {
+body { background-image:none !important; }
+.noprint { display:none !important; }
+}
+
+
+
+/* ------    navigateurs    ------ */
+/* Webkit-based : chrome/safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+}
+
+/* Opera */
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+}

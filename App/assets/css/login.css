@@ -1,0 +1,274 @@
+/*
+Theme Name: GROUPE MARTY
+Theme URI: http://www.groupe-marty.com
+Author: VISIONSNOUVELLES
+Author URI: http://www.visionsnouvelles.com
+Description: Child theme designed for GROUPE MARTY,based on the basic theme of Wordpress.
+Template: twentyfifteen
+Text Domain: missionsinterim
+Version: 1.0
+License: Copyright ©2015 - GROUPE MARTY - All rights reserved
+License URI: http://www.groupe-marty.com/mentions-legales/
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+@import url(./common.min.css);
+
+html,body {}
+html { font-size:62.5%; }
+body {
+	color:rgba(116,116,116,1);
+	font-family:'Fira Sans', sans-serif;
+}
+
+/* Gère le background et les polices */
+body.login {
+	background:transparent url(../uploads/screen-marty.jpg) left top no-repeat;
+	font-size:14px;font-size:1.4rem;
+	font-weight:400;
+	margin:0;
+	padding:220px 0 0 0;padding:22rem 0 0 0;
+	position:relative;
+	
+	/* background */
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.login #login {
+	background-color:rgba(255,255,255,.3);
+	margin:0 auto;
+	padding:0 0 50px 0;padding:0 0 5rem 0;
+	width:auto;
+}
+/* Gère le logo */
+.login h1 { margin:0 auto;position:relative; }
+.login h1::before {
+	content:'';
+	display:block;
+	height:50px;height:5rem;
+	width:100%;
+}
+	.login h1 a {
+		background-image:url(../images/logo-groupemarty.png);
+		background-position:center bottom;
+		background-repeat:no-repeat;
+		display:block;
+		height:76px;height:7.6rem;
+		margin:0 auto;
+		padding:57px 5px;padding:5.7rem .5rem;
+		width:377px;width:37.7rem;
+		
+		/* transition */
+		-webkit-transition-duration:.2s;
+		-moz-transition-duration:.2s;
+		-ms-transition-duration:.2s;
+		-o-transition-duration:.2s;
+		transition-duration:.2s;
+		-webkit-transition-timing-function:ease-in-out;
+		-moz-transition-timing-function:ease-in-out;
+		-ms-transition-timing-function:ease-in-out;
+		-o-transition-timing-function:ease-in-out;
+		transition-timing-function:ease-in-out;
+		/* background */
+		-webkit-background-size:contain;
+		-moz-background-size:contain;
+		-ms-background-size:contain;
+		-o-background-size:contain;
+		background-size:contain;
+	}
+	.mobile #login h1 a { width:300px;width:30rem; }
+
+/* Gère les messages */
+.login .message,.login #login_error {
+	margin:20px auto;margin:2rem auto;
+	max-width:100%;
+	width:377px;width:37.7rem;
+}
+
+/* Gère le formulaire */
+.login form {
+	margin:20px auto 0 auto;margin:2rem auto 0 auto;
+	max-width:100%;
+	width:377px;width:37.7rem;
+}
+	.login label {
+		font-size:14px;font-size:1.4rem;
+		font-weight:400;
+	}
+	.login input:not([type="submit"]):not([type="button"]) {
+		font-size:14px;font-size:1.4rem;
+		font-weight:400;
+	}
+	.login .button-primary {
+		border:none;
+		font-weight:400;
+		height:inherit;
+		line-height:normal;
+		padding:0;
+		text-align:center;
+		text-decoration:none;
+		text-transform:uppercase;
+		width:auto;
+		
+		/* ombres */
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		-ms-box-shadow:none;
+		-o-box-shadow:none;
+		box-shadow:none;
+		/* transition */
+		-webkit-transition-duration:.2s;
+		-moz-transition-duration:.2s;
+		-ms-transition-duration:.2s;
+		-o-transition-duration:.2s;
+		transition-duration:.2s;
+		-webkit-transition-timing-function:ease-in-out;
+		-moz-transition-timing-function:ease-in-out;
+		-ms-transition-timing-function:ease-in-out;
+		-o-transition-timing-function:ease-in-out;
+		transition-timing-function:ease-in-out;
+		
+background: rgb(167,0,19); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3MDAxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMjAwMWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(167,0,19,1) 0%, rgba(226,0,26,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,0,19,1)), color-stop(100%,rgba(226,0,26,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(167,0,19,1) 0%,rgba(226,0,26,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(167,0,19,1) 0%,rgba(226,0,26,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(167,0,19,1) 0%,rgba(226,0,26,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(167,0,19,1) 0%,rgba(226,0,26,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a70013', endColorstr='#e2001a',GradientType=0 ); /* IE6-8 */
+	}
+	.wp-core-ui .button.button-large {
+		height:inherit;
+		line-height:normal;
+		padding:10px 25px;padding:1rem 2.5rem;
+	}
+	.login .button-primary:hover,.login .button-primary:focus,.login .button-primary:active {
+background: rgb(226,0,26); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UyMDAxYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhNzAwMTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(226,0,26,1) 0%, rgba(167,0,19,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,0,26,1)), color-stop(100%,rgba(167,0,19,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(226,0,26,1) 0%,rgba(167,0,19,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(226,0,26,1) 0%,rgba(167,0,19,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(226,0,26,1) 0%,rgba(167,0,19,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(226,0,26,1) 0%,rgba(167,0,19,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2001a', endColorstr='#a70013',GradientType=0 ); /* IE6-8 */
+	}
+
+/* Gère les liens */
+.login #backtoblog {
+	background-color:rgba(29,29,29,.7);	
+	color:rgba(255,255,255,1);
+	display:block;
+	left:0;
+	margin:0 auto;
+	padding:0;
+	position:absolute;
+	right:0;
+	top:0;
+	
+	/* background */
+	-webkit-background-size:contain;
+	-moz-background-size:contain;
+	-ms-background-size:contain;
+	-o-background-size:contain;
+	background-size:contain;
+}
+.login #nav {
+	border-right:rgba(255,255,255,.5) .5px solid;border-right:rgba(255,255,255,.5) .05rem solid;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	text-align:right;
+	max-width:100%;
+	width:377px;width:37.7rem;
+	z-index:1;
+}
+/*
+.login #nav::before {
+	background-color:rgba(255,255,255,1);
+	bottom:0;
+	content:'';
+	left:0;
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:-1;
+}
+.login #nav::after {
+	bottom:5px;bottom:.5rem;
+	content:'';
+	left:5px;left:.5rem;
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:-10;
+	
+	/* ombres */
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,.13);-webkit-box-shadow:0 .1rem .3rem rgba(0,0,0,.13);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,.13);-moz-box-shadow:0 .1rem .3rem rgba(0,0,0,.13);
+	-ms-box-shadow:0 1px 3px rgba(0,0,0,.13);-ms-box-shadow:0 .1rem .3rem rgba(0,0,0,.13);
+	-o-box-shadow:0 1px 3px rgba(0,0,0,.13);-o-box-shadow:0 .1rem .3rem rgba(0,0,0,.13);
+	box-shadow:0 1px 3px rgba(0,0,0,.13);box-shadow:0 .1rem .3rem rgba(0,0,0,.13);
+}
+*/
+.mobile #login #backtoblog,.mobile #login #nav { margin:0 auto; }
+	.login #nav a,.login #backtoblog a {
+		color:rgba(255,255,255,1);
+		display:block;
+		font-weight:400;
+		padding:20px;padding:2rem;
+		text-shadow:none;
+		
+		/* transition */
+		-webkit-transition-duration:.2s;
+		-moz-transition-duration:.2s;
+		-ms-transition-duration:.2s;
+		-o-transition-duration:.2s;
+		transition-duration:.2s;
+		-webkit-transition-timing-function:ease-in-out;
+		-moz-transition-timing-function:ease-in-out;
+		-ms-transition-timing-function:ease-in-out;
+		-o-transition-timing-function:ease-in-out;
+		transition-timing-function:ease-in-out;
+	}
+	.login #backtoblog a { color:rgba(255,255,255,1); }
+	.login #nav a:hover,.login #nav a:focus,.login #nav a:active,.login #backtoblog a:hover,.login #backtoblog a:focus,.login #backtoblog a:active { color:rgba(226,0,26,1); }
+
+
+
+/**
+ * -------------------------------------------------- 
+ * MEDIAS QUERIES
+ * --------------------------------------------------
+**/
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+body.login { padding-top:160px;padding-top:16rem; }
+}
+@media only screen and (max-width: 800px) {
+body.login { padding-bottom:10px;padding-bottom:1rem;padding-top:120px;padding-top:12rem; }
+.login h1::before { height:15px;height:1.5rem; }
+}
+@media only screen and (max-width: 768px) {
+body.login { padding-bottom:30px;padding-bottom:3rem;padding-top:150px;padding-top:15rem; }
+.login h1::before { height:80px;height:8rem; }
+}
+@media only screen and (max-width: 600px) {
+body.login { padding-top:130px;padding-top:13rem; }
+}
+@media only screen and (max-width: 480px) {
+body.login { padding-bottom:10px;padding-bottom:1rem;padding-top:100px;padding-top:10rem; }
+.login h1::before { height:20px;height:2rem; }
+}
+@media only screen and (max-width: 320px) {
+body.login { padding-bottom:0;padding-top:90px;padding-top:9rem; }
+.login h1::before { content:none; }
+	.login h1 a { width:300px;width:30rem; }
+}

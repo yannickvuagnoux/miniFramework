@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face
+{
+    font-family:'bebas';
+    src:url('../font/BebasNeue_1.otf') format('truetype');
+}
+
+body { background:none !important; }
+.noprint { display:none !important; }
+
+#billet {
+    height:240px;
+    position:relative;
+    width:525px;
+}
+    #billet #nominatif {
+        background-color:rgb(255,255,255);
+        color:rgb(0,0,0);
+        display:block;
+		font-family:'bebas', Arial, sans-serif;
+        font-size:10px;font-size:1rem;
+        font-style:italic;
+        font-weight:700;
+        height:35px;
+        left:265px;
+        line-height:35px;
+        padding:0;
+        position:absolute;
+        text-align:center;
+        top:193px;
+        width:243px;
+        z-index:10;
+    }
+
+/**
+ * --------------------------------------------------
+ * Media Queries CSS3
+ * --------------------------------------------------
+**/
+/* ------    impression    ------ */
+@media print {
+body { background-image:none !important; }
+.noprint { display:none !important; }
+}
