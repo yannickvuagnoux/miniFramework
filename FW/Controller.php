@@ -1,20 +1,18 @@
 <?php 
 
-/**
-* 
+/*
+ controller mere qui sert a rien 
 */
-
 
 abstract class Controller
 {
-	private $_className;
+	protected $_className;
 	
 
 	function __construct()
 	{
 		// on va chercher le nom de la class on enleve le mot Controller pour garder uniquement son nom
 		$this->_className = substr(get_class($this),0,-10);
-
 	
 	}
 
@@ -25,10 +23,7 @@ abstract class Controller
 
 	// }
 
-	public function indexAction()
-	{
-		require ("App/Views/".$this->_className."/index.php");
-	}
+	
 
 }
 
